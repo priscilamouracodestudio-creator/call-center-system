@@ -68,6 +68,25 @@ com.callcenter
 ├── service/
 │   └── CallCenter.java
 └── Main.java
+
+test/com.callcenter/structure/
+├── FilaDeEsperaTest.java
+└── PilhaDeHistoricoTest.java
+```
+
+---
+
+## 🧪 Testes automatizados
+
+O projeto conta com testes unitários (JUnit 5) cobrindo o comportamento das duas estruturas de dados construídas do zero:
+
+- ✅ `FilaDeEsperaTest` — fila começa vazia, enfileirar adiciona corretamente, `chamarProximo()` respeita a ordem FIFO
+- ✅ `PilhaDeHistoricoTest` — pilha começa vazia, empilhar adiciona corretamente, `desempilhar()` respeita a ordem LIFO
+
+Para rodar os testes:
+
+```bash
+mvn test
 ```
 
 ---
@@ -76,13 +95,14 @@ com.callcenter
 
 - ☕ Java
 - 📦 Maven
+- 🧪 JUnit 5
 
 ---
 
 ## ▶️ Como executar
 
 ```bash
-git clone https://github.com/seu-usuario/Call-Center-System.git
+git clone https://github.com/seu-usuario/call-center-system.git
 cd call-center-system
 mvn compile
 mvn exec:java -Dexec.mainClass="com.callcenter.Main"

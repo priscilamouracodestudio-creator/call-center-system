@@ -102,7 +102,7 @@ mvn test
 ## ▶️ Como executar
 
 ```bash
-git clone https://github.com/seu-usuario/call-center-system.git
+git clone https://github.com/priscilamouracodestudio-creator/call-center-system.git
 cd call-center-system
 mvn compile
 mvn exec:java -Dexec.mainClass="com.callcenter.Main"
